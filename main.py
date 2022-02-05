@@ -13,7 +13,7 @@ FPS = 60
 frame_per_sec = pygame.time.Clock()
 
 display_surface = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('Game')
+pygame.display.set_caption('PM')
 
 
 class player(pygame.sprite.Sprite):
@@ -22,7 +22,7 @@ class player(pygame.sprite.Sprite):
         self.surf = pygame.Surface((30, 30))
         self.surf.fill((147, 50, 168))
         self.rect = self.surf.get_rect()
-        
+
         self.oldpos = (0, 0)
         self.pos = vec((250, 250))
 
